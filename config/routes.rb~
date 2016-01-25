@@ -1,0 +1,8 @@
+Rails.application.routes.draw do
+  devise_for :users
+	resources :messages do
+	 resources :comments
+	root 'messages#index'
+	
+  
+end
